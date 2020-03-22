@@ -32,6 +32,11 @@ function dFormatter(num) {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") || 0;
 }
 
+function rFormatter(str){
+ return str;
+}
+    
+
 function setLocale(locale = "en") {
   const l = {};
   i18n.configure({
@@ -94,6 +99,19 @@ exports.embedEvent = (event, locale) => {
     victimGuildValue += event.Victim.GuildName;
   }
 
+let victimloot;
+if (event.Victim.Inventory){
+    var loot='';
+victimloot=event.Victim.Inventory
+for(i=0; i<48; i++){
+    if (victimloot[i]!=null){
+         loot+=victimloot[i].Type+', ';
+    }     
+    if (loot.length==0)
+    loot="no inventory"
+}
+}
+
   return {
     embed: {
       color: good ? GREEN : RED,
@@ -139,6 +157,11 @@ exports.embedEvent = (event, locale) => {
           name: "\u200B",
           value: "\u200B",
           inline: true
+        },
+        {
+          name: "Victim Loot",
+          value:  loot,
+          inline:true 
         }
       ]
     }
