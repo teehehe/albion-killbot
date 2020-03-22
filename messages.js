@@ -32,11 +32,6 @@ function dFormatter(num) {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") || 0;
 }
 
-function rFormatter(str){
- return str;
-}
-    
-
 function setLocale(locale = "en") {
   const l = {};
   i18n.configure({
