@@ -22,3 +22,13 @@ fix blank inventory spots(currently pulling from their location of victim bag ex
 
 change when results folder is emptied sometimes it may empty during a merge and the merge might fail so the kill image comes out incorrect or distorted or not displayed
 
+directions for noobs:
+install node.js download link: https://nodejs.org/en/download/
+in the folder where your project is create a file called .env and contents should be as follows
+TOKEN=discord token goes here
+MONGODB_URL=mongo db url goes here
+
+download mongo db atlas: https://www.mongodb.com/download-center/compass
+no need to sign up or register we will be hosting this locally and not on their servers.
+once it loads click connect
+
