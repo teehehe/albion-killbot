@@ -11,3 +11,5 @@ could possible just pull these from the web instead of locally hosted not sure p
 my code is very sloppy as I do not primarily work with js
 
 
+
+https://i.imgur.com/l29a7jBh.png
