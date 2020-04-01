@@ -12,4 +12,4 @@ my code is very sloppy as I do not primarily work with js
 
 
 
-https://i.imgur.com/l29a7jBh.png
+<a href="https://imgur.com/l29a7jB"><img src="https://i.imgur.com/l29a7jBh.png" title="source: imgur.com" /></a>
