@@ -1,32 +1,34 @@
-images folder is uploaded to google drive it is around 500mb and may be missing images they are printed in the console.
-https://drive.google.com/open?id=1xjkJDqupzVb5tDthKdeEkjh5AjBDvLqI
+# albion-killbot
 
+Discord bot to display kill statistics in Albion Online.
 
-link to grab missing images is 
-https://gameinfo.albiononline.com/api/gameinfo/items/T4_ARTEFACT_ARMOR_CLOTH_KEEPER.png
-you would replace the item name with the item you are looking for. so if you needed T6_ORE_LEVEL3@3
-the link youd go to is https://gameinfo.albiononline.com/api/gameinfo/items/T6_ORE_LEVEL3@3.png
-could possible just pull these from the web instead of locally hosted not sure performance wise since their site seems sluggish.
+It keeps tracks of events using the gameinfo API and displays tracked events for specific players, guilds or entire alliances. For now, we only track kill events in the open world.
 
-my code is very sloppy as I do not primarily work with js
+Also, when you are tracking a guild, the bot will display the monthly ranking every day at 12pm (bot time).
 
+Other feature suggestions are welcome in the issues section of the github.
 
+# How to install
 
-<a href="https://imgur.com/l29a7jB"><img src="https://i.imgur.com/l29a7jBh.png" title="source: imgur.com" /></a>
+Invite it to your server:
 
+[![Invite](https://dabuttonfactory.com/button.png?t=INVITE+ALBION+KILLBOT&f=Roboto-Bold&ts=14&tc=fff&w=250&h=50&c=4&bgt=unicolored&bgc=7289da)](https://discordapp.com/oauth2/authorize?client_id=677603531028693042&scope=bot)
 
-to do:
-adding quantity numbers on victim inventory
+Make sure the bot have the following permissions:
 
-fix blank inventory spots(currently pulling from their location of victim bag example if is a blank space means item was not in that spot in their bag but items followed that space)
+- Read Texts
+- Send Messages
+- Embed Links
 
-change when results folder is emptied sometimes it may empty during a merge and the merge might fail so the kill image comes out incorrect or distorted or not displayed
+# Configuration
 
-directions for noobs:
-install node.js download link: https://nodejs.org/en/download/
-in the folder where your project is create a file called .env and contents should be as follows
-TOKEN=discord token goes here
-MONGODB_URL=mongo db url goes here
+Type `!help` to see the bot's command.
 
-download mongo db community server: https://www.mongodb.com/download-center/community
-Discord token :https://discordapp.com/developers/applications
+The bot can track players and guilds. Alliances are disabled for now to avoid bot spam.
+
+# Contributing
+
+The bot development is simple as cloning the repository, cd'ing into it and running yarn.
+You only need to set the Discord token using the `TOKEN` env. And `MONGODB_URL` if you want to persist server config.
+
+Patches and suggestions are very welcome!

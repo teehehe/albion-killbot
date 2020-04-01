@@ -1,5 +1,7 @@
 const mergeImg = require("merge-img");
+const fs = require('fs');
 const sharp = require('sharp');
+const fsExtra = require('fs-extra')
 const moment = require("moment");
 var jimp = require("jimp");
 const i18n = require("i18n");
@@ -8,6 +10,7 @@ const GREEN = 52224;
 const RED = 13369344;
 const BATTLE = 16752981;
 const RANKING_LINE_LENGTH = 23;
+var file;
 
 const sleep = milliseconds => {
   return new Promise(resolve => setTimeout(resolve, milliseconds));

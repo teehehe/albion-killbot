@@ -8,9 +8,8 @@ const commands = require("./commands");
 const events = require("./queries/events");
 const battles = require("./queries/battles");
 const guilds = require("./queries/guilds");
-
 var promise = Promise.resolve(); 
-var file;
+
 
 const token = process.env.TOKEN;
 if (!token) {
@@ -62,10 +61,10 @@ const scanEvents = async () => {
           });
     });
   });
- fsExtra.emptyDirSync('result')
   }
-  return getEvents.rate;
-}
+return getEvents.rate;
+
+};
 
 const scanBattles = async () => {
   const getBattles = await battles.getBattles(client.guilds.array());
@@ -86,7 +85,7 @@ const scanBattles = async () => {
       sendGuildMessage(guild, messages.embedBattle(battle, guild.config.lang))
     );
   }
-
+    fsExtra.emptyDirSync('result')
   return getBattles.rate;
 };
 
@@ -157,7 +156,7 @@ client.on("ready", async () => {
     }
   };
 
-  runInterval(scanEvents, 65000);
+  runInterval(scanEvents, 60000);
   runInterval(scanBattles, 60000);
 });
 
