@@ -29,6 +29,4 @@ TOKEN=discord token goes here
 MONGODB_URL=mongo db url goes here
 
 download mongo db community server: https://www.mongodb.com/download-center/community
-no need to sign up or register we will be hosting this locally and not on their servers.
-once it loads click connect
-
+Discord token :https://discordapp.com/developers/applications
