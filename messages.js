@@ -8,7 +8,6 @@ const GREEN = 52224;
 const RED = 13369344;
 const BATTLE = 16752981;
 const RANKING_LINE_LENGTH = 23;
-var file;
 
 const sleep = milliseconds => {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
