@@ -1,7 +1,5 @@
 const mergeImg = require("merge-img");
-const fs = require('fs');
 const sharp = require('sharp');
-const fsExtra = require('fs-extra')
 const moment = require("moment");
 var jimp = require("jimp");
 const i18n = require("i18n");
