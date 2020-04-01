@@ -15,4 +15,10 @@ my code is very sloppy as I do not primarily work with js
 <a href="https://imgur.com/l29a7jB"><img src="https://i.imgur.com/l29a7jBh.png" title="source: imgur.com" /></a>
 
 
-to do: adding quantity numbers on victim inventory fix blank inventory spots(currently pulling from their location of victim bag example if is a blank space means item was not in that spot in their bag but items followed that space)
+to do:
+adding quantity numbers on victim inventory
+
+fix blank inventory spots(currently pulling from their location of victim bag example if is a blank space means item was not in that spot in their bag but items followed that space)
+
+change when results folder is emptied sometimes it may empty during a merge and the merge might fail so the kill image comes out incorrect or distorted or not displayed
+
