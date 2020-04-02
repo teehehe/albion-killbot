@@ -7,7 +7,7 @@ download node: https://nodejs.org/en/download/  <br>
 download mongodb: https://www.mongodb.com/download-center/community <br>
 some images are definately still missing you need to check the console occasionally for message about missing images to add them to your image folder.
 current images: https://drive.google.com/open?id=1xjkJDqupzVb5tDthKdeEkjh5AjBDvLqI
-
+discord developer app website for token: https://discordapp.com/developers/applications
 create .env file with contents<br>
 TOKEN=DISCORD TOKEN<br>
 MONGODB_URL=MONGODB URL<br>
