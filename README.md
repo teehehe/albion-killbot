@@ -1,34 +1,17 @@
 # albion-killbot
 
-Discord bot to display kill statistics in Albion Online.
 
-It keeps tracks of events using the gameinfo API and displays tracked events for specific players, guilds or entire alliances. For now, we only track kill events in the open world.
+<a href="https://imgur.com/l29a7jB"><img src="https://i.imgur.com/l29a7jBh.png" title="source: imgur.com" /></a>
 
-Also, when you are tracking a guild, the bot will display the monthly ranking every day at 12pm (bot time).
+download node: https://nodejs.org/en/download/
+download mongodb: https://www.mongodb.com/download-center/community
 
-Other feature suggestions are welcome in the issues section of the github.
 
-# How to install
+create .env file with contents
+TOKEN=DISCORD TOKEN
+MONGODB_URL=MONGODB URL
 
-Invite it to your server:
+to add missing images: https://gameinfo.albiononline.com/api/gameinfo/items/
+and add the item it says is missing so example images/T6_ORE_LEVEL3@3 missing you would
+https://gameinfo.albiononline.com/api/gameinfo/items/T6_ORE_LEVEL3@3.png
 
-[![Invite](https://dabuttonfactory.com/button.png?t=INVITE+ALBION+KILLBOT&f=Roboto-Bold&ts=14&tc=fff&w=250&h=50&c=4&bgt=unicolored&bgc=7289da)](https://discordapp.com/oauth2/authorize?client_id=677603531028693042&scope=bot)
-
-Make sure the bot have the following permissions:
-
-- Read Texts
-- Send Messages
-- Embed Links
-
-# Configuration
-
-Type `!help` to see the bot's command.
-
-The bot can track players and guilds. Alliances are disabled for now to avoid bot spam.
-
-# Contributing
-
-The bot development is simple as cloning the repository, cd'ing into it and running yarn.
-You only need to set the Discord token using the `TOKEN` env. And `MONGODB_URL` if you want to persist server config.
-
-Patches and suggestions are very welcome!
